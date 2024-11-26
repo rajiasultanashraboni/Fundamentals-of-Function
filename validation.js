@@ -7,4 +7,17 @@ function multiply(num1, num2) {
 }
 
 const result = multiply(10, 7);
-console.log(result);
+// console.log(result);
+
+function fullName(first, second) {
+  if (typeof first !== "string") {
+    return "pease provide a first string";
+  } else if (second !== "string") {
+    return " please provide a second string";
+  }
+  const full = first + " " + second;
+  return full;
+}
+
+const result2 = fullName("10", 20);
+console.log(result2);
