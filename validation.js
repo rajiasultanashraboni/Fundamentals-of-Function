@@ -20,4 +20,16 @@ function fullName(first, second) {
 }
 
 const result2 = fullName("10", 20);
-console.log(result2);
+// console.log(result2);
+
+function getPrice(products) {
+  //   console.log(products);
+  if (typeof products !== "object") {
+    return "please provide a object";
+  }
+  const price = products.price;
+  return price;
+}
+const result3 = getPrice({ name: "chiruni", price: 35 });
+// const result3 = getPrice(10);
+console.log(result3);
