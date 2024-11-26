@@ -32,4 +32,18 @@ function getPrice(products) {
 }
 const result3 = getPrice({ name: "chiruni", price: 35 });
 // const result3 = getPrice(10);
-console.log(result3);
+// console.log(result3);
+
+function getSecond(array) {
+  //   console.log(typeof array);
+  if (Array.isArray(array) === false) {
+    return "please enter a valid array";
+  }
+  const second = array[1];
+  return second;
+}
+
+// const result4 = getSecond([2, 4, 5, 6]);
+const result4 = getSecond(10);
+
+console.log(result4);
